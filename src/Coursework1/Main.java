@@ -125,24 +125,22 @@ public class Main {
     }
 
 
-    public static int compareSalaries1() {
-        int a = 60_000;
+    public static int compareSalaries1(int number) {
         for (int i = 0; i < employees.length; i++) {
-            if (employees[i].getSalary() < a) {
+            if (employees[i].getSalary() < number) {
                 System.out.println("id - " + employees[i].getId() + ", ФИО - " + employees[i].getFullName() + ", зарплата - " + employees[i].getSalary());
             }
         }
-        return a;
+        return number;
     }
 
-    public static int compareSalaries2() {
-        int b = 100_000;
+    public static int compareSalaries2(int number) {
         for (int i = 0; i < employees.length; i++) {
-            if (employees[i].getSalary() >= b) {
+            if (employees[i].getSalary() >= number) {
                 System.out.println("id - " + employees[i].getId() + ", ФИО - " + employees[i].getFullName() + ", зарплата - " + employees[i].getSalary());
             }
         }
-        return b;
+        return number;
     }
 
     public static void displayFullName() {
@@ -188,9 +186,9 @@ public class Main {
         System.out.println();
         getSalaryIndexation();
         System.out.println();
-        compareSalaries1();
+        compareSalaries1(60_000);
         System.out.println();
-        compareSalaries2();
+        compareSalaries2(100_000);
         System.out.println();
         System.out.println();
         getDepartmentMinimumWage(5);
