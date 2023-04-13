@@ -1,7 +1,9 @@
 package Coursework1;
 
 public class Main {
+
     public static void main(String[] args) {
+
         EmployeeBook employeeBook = new EmployeeBook();
 
         employeeBook.addEmployee("Зайцев Евгений Николаевич", 1, 70_000);
