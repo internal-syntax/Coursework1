@@ -62,7 +62,7 @@ public class EmployeeBook {
     public void printAllEmployees() {
         for (int i = 0; i < employees.length; i++) {
             Employee employee = employees[i];
-            System.out.println("ФИО - " + employee.getFullName() + ", отдел - " + employee.getDepartment() + ", зарплата - " + employee.getSalary() + ", id - " + employee.getId());
+            System.out.println(employee.toString());
         }
     }
 
